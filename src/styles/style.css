@@ -1,0 +1,139 @@
+@import url("/src/styles/fonts.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+body {
+  font-family: Vazirmatn;
+  background-color: #efefef;
+}
+.app-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 5rem 5rem 0;
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem 0 2rem;
+}
+.header-number {
+  color: #234894;
+  background-color: #afcedd;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  padding-top: 0.35rem;
+}
+.header-title {
+  color: #234894;
+  width: 95px;
+  height: 24px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: right;
+  transform: translateX(60%);
+}
+.header-date {
+  color: #696969;
+  width: 50px;
+  height: 18px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+.content {
+  padding: 1rem 1rem 0 2rem;
+}
+.content-title {
+  color: #1e1e1e;
+  width: 135px;
+  height: 27px;
+  margin-top: 1rem;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 27px;
+}
+.content-number {
+  color: #696969;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem 0 2rem;
+}
+.actions-pic {
+  width: 40px;
+  height: 40px;
+  margin-left: 0.5rem;
+  border-radius: 0.5rem;
+}
+.actions-name {
+  color: #1e1e1e;
+  width: 96px;
+  height: 24px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  transform: translateX(20%);
+}
+.actions-button {
+  color: #ffffff;
+  background-color: #219f95;
+  width: 150px;
+  height: 64px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .main {
+    grid-template-columns: 1fr 1fr;
+  }
+  .app-header {
+    flex-direction: row;
+  }
+  .header-title {
+    transform: translateX(70%);
+  }
+  .actions-name {
+    transform: translateX(20%);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .app-header {
+    flex-direction: row;
+  }
+  .header-title {
+    transform: translateX(50%);
+  }
+  .actions-name {
+    transform: translateX(1%);
+  }
+}
